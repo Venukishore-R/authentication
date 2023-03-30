@@ -14,6 +14,7 @@
             <div class="col-md-4 offset-md-4" style="margin-top: 45px;">
                   <h4>User Register</h4><hr>
                   <form action="{{ route('user.create') }}" method="post" autocomplete="off">
+                    @csrf
                     @if (Session::get('success'))
                          <div class="alert alert-success">
                              {{ Session::get('success') }}
